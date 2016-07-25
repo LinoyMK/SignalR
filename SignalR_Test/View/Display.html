@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/jquery.signalR-2.2.0.min.js"></script>
+
+    <script type="text/javascript">
+
+        var FRConfiguration = (function () {
+
+            return {
+                CrossDomainAPI: 'http://localhost:54715'
+            };
+        })();
+
+    </script>
+
+
+</head>
+<body>
+
+    <div class="timer"></div>
+    <div>
+        <span>
+            Name : <input type="text" class="txtMessage" />
+            <button class="btnSend">SendMessage</button>
+        </span>
+    </div>
+    <br/>
+    <div>
+        <span>
+            GroupName : <input type="text" class="txtGroup" />
+            <button class="btnJoinGroup">JoinGroup</button>
+            <button class="btnSendPrivateMsg">Send Private message</button>
+        </span>
+    </div>
+
+    <h3>Messages</h3>
+    <div class="message"></div>
+    <div class="private-message"></div>
+
+    <script src="../Scripts/MyScripts/display.js"></script>
+</body>
+</html>
